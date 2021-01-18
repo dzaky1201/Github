@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name" translatable="false">Github</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="user">User</string>
+    <string name="favorite">Favorite</string>
+    <string name="search">Search</string>
+    <string name="Home">Home</string>
+    <string name="change_language_settings">Change Language Settings</string>
+    <string name="hello_blank_fragment">Hello Blank</string>
+    <string name="Detail">Detail</string>
+    <string name="Following">Following</string>
+    <string name="Followers">Followers</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="user">Pengguna</string>
+    <string name="favorite">Disukai</string>
+    <string name="search">cari</string>
+    <string name="Home">Beranda</string>
+    <string name="change_language_settings">Ganti Bahasa</string>
+    <string name="hello_blank_fragment">Hello Blank</string>
+    <string name="Detail">Rincian</string>
+    <string name="Following">Mengikuti</string>
+    <string name="Followers">Diikuti</string>
+</resources>

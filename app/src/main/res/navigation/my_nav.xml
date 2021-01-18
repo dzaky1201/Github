@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeUserFragment">
+
+    <fragment
+        android:id="@+id/homeUserFragment"
+        android:name="com.dzakyhdr.github.ui.fragment.Home.HomeUserFragment"
+        android:label="@string/Home"
+        tools:layout="@layout/fragment_home_user">
+        <action
+            android:id="@+id/action_homeUserFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.dzakyhdr.github.ui.fragment.Favorite.FavoriteFragment"
+        android:label="@string/favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.dzakyhdr.github.ui.fragment.Detail.DetailFragment"
+        android:label="@string/Detail"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="itemResult"
+            app:argType="com.dzakyhdr.github.data.model.Item" />
+        <action
+            android:id="@+id/action_detailFragment_to_followersFragment"
+            app:destination="@id/followersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/followersFragment"
+        android:name="com.dzakyhdr.github.ui.fragment.followers.FollowersFragment"
+        android:label="FollowersFragment"
+        tools:layout="@layout/fragment_followers"/>
+</navigation>
